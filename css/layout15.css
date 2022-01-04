@@ -42,11 +42,8 @@ form textarea {
  max-width: 90%;
 }
 
-
-
  /* lighter grey, less visually heavy */
  
-
 /* box sizing */
 html {
     box-sizing: border-box;
@@ -171,6 +168,17 @@ p {
     transition: all 0.2s ease;
 }
 /* small screen code a:link .page-nav */
+/* a: link, :visited :hover, :activE*/
+.page-nav a:link {
+    background:purple;
+    color:#000094;
+
+}
+
+.page-nav a:visited {
+    background: rgb(139, 60, 136);
+    color: cornflowerblue;
+}
 
 
 .page-nav a:hover {
@@ -183,10 +191,6 @@ p {
     color: #624158;
 }
 
-.page-nav a:focus {
-    background: chartreuse;
-    color: cornflowerblue;
-}
 
 .page-nav a:active {
     background: #00FFFF;
@@ -194,11 +198,7 @@ p {
 
 }
 
-.page-nav a:link {
-    background:purple;
-    color:#000094;
 
-}
 .page-nav li { flex: 1 1 25%; }
 
 
@@ -252,12 +252,12 @@ p {
 }
 
 .page-header {
-    background-color: green;
+    /*background-color: green;*/
     background-image: url(../images/optimised-image.jpg);
     /*background-image: url(../images/sunset.jpg);*/
     background-repeat: no-repeat;
     background-position: center;
-    background-blend-mode: normal;
+    background-blend-mode:normal;
     min-height: 30vh;
     background-size: cover;
 }
@@ -334,7 +334,7 @@ img {
 
 .header-content {
     max-width: 500px;
-    font-size: 1.35rem;
+    /*font-size: 1.35rem;*/
     color: #fff;
     text-align: center;
     padding: 10px;
@@ -404,8 +404,30 @@ p {
 .image-gallery .an-image {
     flex: 33%;
     max-width:1200px;
+   /* max-width:800px;*/
     padding: 20px;
     background: white;
+}
+
+/*.image-gallery .an-image+.an-image {
+    margin-left: 20px;
+}*/
+
+
+@media screen and (min-width: 750px) {
+
+    .image-gallery .image-container {
+        display: flex;
+    }
+    .image-gallery .an-image {
+        flex: 33%;
+        padding: 20px;
+        background: white;
+    }
+    .image-gallery .an-image+.an-image {
+        margin-left: 20px;
+    }
+
 }
 
 /* larger screen code */
@@ -442,6 +464,7 @@ p {
         flex: 1 1 25%;
     }
 }
+
 
 
 
@@ -557,6 +580,8 @@ form input[type="submit"]:hover {
 
 
 /* footer */
+
+
 footer {
     background-color: darkviolet;
     color: whitesmoke;
@@ -570,6 +595,14 @@ footer {
     justify-content: center;
     color: whitesmoke;
 }
+
+footer {
+    background: darkmagenta;
+    display: flex;
+    height: 15vh;
+    align-items: center;
+    justify-content: center;
+  }
 
 footer a:link {
     color: aqua;
@@ -607,24 +640,13 @@ a:hover {
 }
 
 
-
-
-
-/*a:focus {
-    color: aqua;
-}*/
-
-
-
 a:active {
     color:darkblue;
 }
 
-
-
-
-
-
+/*a:focus {
+    color: aqua;
+}*/
 
 /*Java script styling*/
 .js-message {
@@ -758,4 +780,20 @@ h5 {
     font-weight: bold;
     color: blueviolet;
 }
+/*Target specific section Class */
+/*
+.about-me {
+    background-color: orange;
+}
 
+.work-experience {
+    background-color: lightblue;
+}
+
+.image-gallery {
+    background-color: purple;
+}
+
+.contact-me {
+    background-color: orange;
+}*/
