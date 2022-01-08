@@ -26,10 +26,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=EB+Garamond:wght@700&family=Karla:wght@700&display=swap" rel="stylesheet">-->
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<!--<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=EB+Garamond:wght@700&family=Karla:wght@400;700&display=swap" rel="stylesheet">
-    
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=EB+Garamond:wght@700&family=Karla:wght@400;700&display=swap" rel="stylesheet">-->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,142 +47,142 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Halant:wght@500&family=Libre+Baskerville&family=The+Nautigal:wght@400;700&display=swap" rel="stylesheet">
 <style>
-    /* ignore these two lines - they are just to reset things */
-body {
-margin: 0;
-padding: 0;
-font-family: sans-serif;
-}
-h1,
-p {
-margin: 0;
-padding: 0;
-}
-/* start reading here */
-
-.page-header {
-min-height: 75vh; /* make the header a sensible height */
-display: flex;
-align-items: center;
-justify-content:center; /* turn on flexbox for our text and center it horizontally and vertically */
-overflow:hidden; /* don't allow the video to show outside the box */
-position:relative; /* create a 'positioning context' for our video and scrim */
-color: white;
-}
-/* note the values for the z-index - because .header-content has a z-index of 2, it is stacked on top of the scrim with a z-index of 1, and on top of the video with a default z-index of 0. Z-index ONLY works when you set position:relative or position:absolute on the part of the page you are styling. */
-
-.page-header video {
-position: absolute;
-width: 100%;
-height: 100%;
-object-fit:cover;
-}
-.page-header .header-content {
-position: relative;
-z-index: 2; /* turn on positioning to allow us to 'stack' the header on top of the video */
-}
-
-/* the scrim is optional */
-.page-header  .scrim {
-position: absolute;
-top: 0;
-right: 0;
-left: 0;
-bottom: 0;
-z-index: 2; /* stretch the video out so it always covers the space allowed */
-background-color: rgba(0,0, 0,0.6); /* make a semi-transparent black background rgba(0, 0, 0,0.6)*/
-}
-.page-header3 {
-    background-image: url(images/christmas.jpg);
-}
-.page-header2{
-    /*background-color: cornflowerblue;*/
-    background-blend-mode:multiply;
-    background-image: url(images/R.jpg);
-    background-position: center;
-    line-height:10vh;
-}
-
-
-.audio {
-    border-collapse: inherit;
-
-}
-.pages-nav ul  {
-    list-style:circle;
-    display : flex;
-flex-wrap : wrap;
-border-top : 10px solid purple;
-border-right : 10px solid purple;
-border-bottom: 10px rebeccapurple;
-margin: 0;
-padding: 0;
-}
-
-
-
-.page-header5 {
-    background-color: green;
-    background-image: url(../images/optimised-image.jpg);
-    /*background-image: url(../images/sunset.jpg);*/
-    background-repeat: no-repeat;
-    background-position: center;
-    background-blend-mode: normal;
-    min-height: 40vh;
-    background-size: cover;
-}
-
-.h5 {
-    text-transform:capitalize;
-}
-.Heads {background-image: url(images/optimised-barclayslogo.jpg);}
-.Heads2 {
-    background-image: url(images/optimised-barclayslogo.jpg);
-}
-
-.header5 {
-    color:rgb(26, 10, 128);
-}
-/* Creating Responsive collum design*/
-
-div {
-  max-width: 1550px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
-}
-.centre {
-    text-align:justify;
+ /* ignore these two lines - they are just to reset things */
+ /*note there are in line style sheet as well as exterbll CSS style sheet*/
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    }
+    h1,
+    p {
+    margin: 0;
+    padding: 0;
+    }
+    /* start reading here */
     
-}
-
-.header9 {
-
-   
-
-    color:whitesmoke;
-    font-family: 'Anton';
-  font-style: normal;
-  font-weight: 400;
-}
-
- div  .header9 {
-  font-family:sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.tot {
-  border-radius: 50%;
-}
-
-
-
-.tot:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
-  
+    .page-header {
+    min-height: 75vh; /* make the header a sensible height */
+    display: flex;
+    align-items: center;
+    justify-content:center; /* turn on flexbox for our text and center it horizontally and vertically */
+    overflow:hidden; /* don't allow the video to show outside the box */
+    position:relative; /* create a 'positioning context' for our video and scrim */
+    color: white;
+    }
+    /* note the values for the z-index - because .header-content has a z-index of 2, it is stacked on top of the scrim with a z-index of 1, and on top of the video with a default z-index of 0. Z-index ONLY works when you set position:relative or position:absolute on the part of the page you are styling. */
+    
+    .page-header video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    }
+    .page-header .header-content {
+    position: relative;
+    z-index: 2; /* turn on positioning to allow us to 'stack' the header on top of the video */
+    }
+    
+    /* the scrim is optional */
+    .page-header  .scrim {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2; /* stretch the video out so it always covers the space allowed */
+    background-color: rgba(0,0, 0,0.6); /* make a semi-transparent black background rgba(0, 0, 0,0.6)*/
+    }
+    .page-header3 {
+        background-image: url(images/christmas.jpg);
+    }
+    .page-header2{
+        /*background-color: cornflowerblue;*/
+        background-blend-mode:multiply;
+        background-image: url(images/R.jpg);
+        background-position: center;
+        line-height:10vh;
+    }
+    
+    
+    .audio {
+        border-collapse: inherit;
+    
+    }
+    .pages-nav ul  {
+        list-style:circle;
+        display : flex;
+    flex-wrap : wrap;
+    border-top : 10px solid purple;
+    border-right : 10px solid purple;
+    border-bottom: 10px rebeccapurple;
+    margin: 0;
+    padding: 0;
+    }
+    
+    
+    
+    .page-header5 {
+        background-color: green;
+        background-image: url(../images/optimised-image.jpg);
+        /*background-image: url(../images/sunset.jpg);*/
+        background-repeat: no-repeat;
+        background-position: center;
+        background-blend-mode: normal;
+        min-height: 40vh;
+        background-size: cover;
+    }
+    
+    .h5 {
+        text-transform:capitalize;
+    }
+    .Heads {background-image: url(images/optimised-barclayslogo.jpg);}
+    .Heads2 {
+        background-image: url(images/optimised-barclayslogo.jpg);
+    }
+    
+    .header5 {
+        color:rgb(26, 10, 128);
+    }
+    /* Creating Responsive collum design*/
+    
+    div {
+      max-width: 1550px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 10px;
+    }
+    .centre {
+        text-align:justify;
+        
+    }
+    
+    .header9 {
+    
+       
+    
+        color:whitesmoke;
+        font-family: 'Anton';
+      font-style: normal;
+      font-weight: 400;
+    }
+    
+     div  .header9 {
+      font-family:sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    
+    .tot {
+      border-radius: 50%;
+    }
+    
+    
+    
+    .tot:hover {
+      box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    }
 
 </style>
 </head>
@@ -196,9 +195,9 @@ div {
              <li class="gate"><a href="#about">About Me</a></li>
             <li><a href="#work">C. S. Venkatakrishnan & Barclays</a></li>
             <li><a href="#images">Image Gallery</a></li>
-            <li><a href="#contact">Contact Me</a></li>
             <li><a href="#Times">Times in Different time zones</a></li>
             <li> <a href="#aboutBarclays" >Some statistics and prehistorcal data about Barclays</a> </li>
+            <li><a href="#contact">Contact Me</a></li>
         </ul>
         
             
@@ -324,7 +323,7 @@ div {
     
             <video autoplay loop muted poster="images/R.jpg" width="10" height="10">
                  <!--<source src="http://55060509.webdevmmu.uk/video/geoffrey.mp4" type="video/mp4">-->
-               <source src= "video9.webm" type="video/webm">
+               <source src= "../21441472-AlanPang.zip/media/video9.webm" type="video/webm">
                
                 <!--<source src="../portfolio-2/media/snow.mp4" type="video/mp4">-->
 
@@ -665,7 +664,7 @@ div {
                 
                 <h1> The Sunset that gives hope and aspirations</h1>
     
-            <img src="images/optimised.jpg" width="10" height="200" alt="this describe sunset">
+            <img src="../portfolio-2/images/optimised.jpg" width="10" height="200" alt="this describe sunset">
                 
             </header>
 
@@ -1238,33 +1237,7 @@ document.write( +month);
 
 
 
-
-
 </main>
-<nav>
-    <ul class="audio">
-        <li>
-        <audio controls loop autoplay >
-        <source src="horse.ogg" type="audio/ogg">
-        <source src="Mariahcarey.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-        </audio>
-    </li>
-    <li>
-        <audio controls loop autoplay >
-        <source src="horse.ogg" type="audio/ogg">
-        <source src="GleeCastLastChristmas.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
-    </li>
-      <li>
-        <audio controls loop autoplay >
-            <source src="horse.ogg" type="audio/ogg">
-            <source src="nextteardropsfall.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-          </audio>
-        </ul>
-</nav>
 
 
 
